@@ -4,6 +4,9 @@ select {
     border-radius: 5px;
     box-sizing: border-box;
     outline: none;
-    padding: .3em;
+    padding: .5em;
+    position: absolute;
     text-align: center;
+    top: 10%;
+    width: 150px;
 }

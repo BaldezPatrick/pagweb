@@ -9,6 +9,10 @@
         "button": {
             "langpt": "Portuguese",
             "langen": "English"
+        },
+        "welcome": {
+            "welcomeText": "Welcome to your account!",
+            "welcomeSubtext": "Here will be your place to tell the movies you've watched!"
         }
     }
 }
