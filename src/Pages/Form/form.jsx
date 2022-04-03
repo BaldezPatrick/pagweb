@@ -1,9 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import Button from '../../Components/Button/button';
 import './form.css';
 
 
 const Form = () => {
+    const { t } = useTranslation();
+
     const [form, setForm] = useState({
         email: '',
         password: ''
@@ -30,18 +34,19 @@ const Form = () => {
     return (
         <>
             <main className='login'>
+                <Button/>
                 <div className="login_container">
                     <h1 className="login_title">Login</h1>
                     <form className="login_form"  onSubmit={(e) => handleSubmit(e)}>
                         <input className='login_input' type="email" placeholder='exemplo@exemplo.com' name="email" id="email" onChange={(e) => handleChange(e)}/>
                         <span className="login_input-border"></span>
-                        {emptyValue && form['email'] == "" ?  <span className="message">O e-mail precisa ser preenchido</span> : ""}
-                        <input className='login_input' type="password" placeholder='Senha' name="password" id="password" onChange={(e) => handleChange(e)}/>
+                        {emptyValue && form['email'] == "" ?  <span className="message">{t('login.emailmessageerro')}</span> : ""}
+                        <input className='login_input' type="password" placeholder={t('login.password')} name="password" id="password" onChange={(e) => handleChange(e)}/>
                         <span className="login_input-border"></span>
-                        {emptyValue && form['password'] == "" ?  <span className="message">A senha precisa ser preenchida</span> : ""}
+                        {emptyValue && form['password'] == "" ?  <span className="message">{t('login.passwordmessageerro')}</span> : ""}
 
                         <button type='submit' className='login_submit' id='btn'>Login</button>
-                        <a href="#" className="login_reset">Esqueceu a senha?</a>
+                        <a href="#" className="login_reset">{t('login.resetpassword')}</a>
                     </form>
                 </div>
             </main>

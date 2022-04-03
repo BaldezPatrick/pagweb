@@ -1,0 +1,14 @@
+{
+    "translation": {
+        "login": {
+            "password": "Senha",
+            "resetpassword": "Esqueceu sua senha?",
+            "emailmessageerro": "O e-mail precisa ser preenchido",
+            "passwordmessageerro": "A senha precisa ser preenchida"
+        },
+        "button": {
+            "langpt": "Português",
+            "langen": "Inglês"
+        }
+    }
+}

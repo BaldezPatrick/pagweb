@@ -1,0 +1,14 @@
+{
+    "translation": {
+        "login": {
+            "password": "Password",
+            "resetpassword": "Forgot your password?",
+            "emailmessageerro": "E-mail needs to be filled in",
+            "passwordmessageerro": "Password needs to be filled in"
+        },
+        "button": {
+            "langpt": "Portuguese",
+            "langen": "English"
+        }
+    }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import  Form  from './Pages/Form/form';
 import Welcome from './Pages/Welcome/welcome';
+import './i18next'
 import { BrowserRouter, BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const container = document.getElementById('root');
@@ -10,7 +11,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path = '/' element={<Form />}></Route>
+        <Route path = '/Login' element={<Form />}></Route>
         <Route path = '/Welcome' element={<Welcome />}></Route>
       </Routes>
     </Router>
