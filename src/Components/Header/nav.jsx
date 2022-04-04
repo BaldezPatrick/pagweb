@@ -8,6 +8,7 @@ const Nav = () => {
     return (
         <>
             <nav class="navbar fixed-top navbar-light">
+                <Button />
                 <div class="container-fluid">
                     <Link class="navbar-brand" to='#'>{t('home.menu.um')}</Link>
                     <Link class="navbar-brand" to='#'>{t('home.menu.dois')}</Link>

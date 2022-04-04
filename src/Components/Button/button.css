@@ -5,7 +5,6 @@ select {
     box-sizing: border-box;
     outline: none;
     padding: .5em;
-    position: absolute;
     text-align: center;
     top: 10%;
 }
