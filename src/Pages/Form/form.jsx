@@ -34,7 +34,6 @@ const Form = () => {
     return (
         <>
             <main className='login'>
-                <Button/>
                 <div className="login_container">
                     <h1 className="login_title">Login</h1>
                     <form className="login_form"  onSubmit={(e) => handleSubmit(e)}>
