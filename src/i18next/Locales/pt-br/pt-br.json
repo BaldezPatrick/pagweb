@@ -1,5 +1,20 @@
 {
     "translation": {
+        "home": {
+            "menu": {
+                "um": "Sobre nós",
+                "dois": "Produtos",
+                "tres": "Contato"
+            },
+            "columns": {
+                "option1": "Comprar produtos",
+                "option2": "Vender produtos",
+                "option3": "Comparar preços"
+            },
+            "tips": {
+                "tip": "Dicas para você melhorar seu rendimento nas vendas!"
+            }
+        },
         "login": {
             "password": "Senha",
             "resetpassword": "Esqueceu sua senha?",

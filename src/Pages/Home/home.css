@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    background: linear-gradient(to top, #F5BE8E, #DE9776) no-repeat fixed;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.col:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.col a {
+    text-decoration: none;
+    color: rgb(81, 71, 71); 
+    font-size: 18pt; 
+}
+
+.containerHome {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.col {
+    background-color:rgba(250, 235, 215, 0.225);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 100px;
+}
+
+.container_img {
+    box-sizing: border-box;
+    margin: 25px;
+}
+
+.container_img img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.homeTips {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.homeTips h1 {
+    width: 700px;
+    text-align: center;
+}
+
+@media (max-width: 765px) {
+    .row {
+        grid-template-columns: auto auto;
+    }
+    
+}
