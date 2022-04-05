@@ -6,13 +6,9 @@
                 "dois": "Produtos",
                 "tres": "Contato"
             },
-            "columns": {
-                "option1": "Comprar produtos",
-                "option2": "Vender produtos",
-                "option3": "Comparar preços"
-            },
-            "tips": {
-                "tip": "Dicas para você melhorar seu rendimento nas vendas!"
+            "headline": {
+                "txt": "Aqui suas roupas contam histórias!",
+                "subtxt": "Venda, compre ou troque suas roupas com nossa ajuda"
             }
         },
         "login": {
