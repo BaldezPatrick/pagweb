@@ -1,20 +1,23 @@
 import './home.css';
 import Nav from '../../Components/Header/nav';
-import Roupa from '../../Assets/roupas.jpg';
+import Btn from '../../Components/Button/buttonchoice';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const Home = (props) => {
     const { t } = useTranslation();
     return (
         <>
             <Nav />
-            <main className="homeContainer">
-                <section className="homeContainerImage">
-                    <img src={Roupa} alt="roupas coloridas penduradas" />
-                </section>
-                <section className="homeContainerHeadline">
-                    {t('home.headline.txt')}
+            <main className="containerHome">
+                <section className="containerHomeHeadline">
+                    <h1>{t('home.headline.txt')}</h1>
                     <p>{t('home.headline.subtxt')}</p>
+                    <section className="buttonContainerHome">
+                        <Link to='/'><Btn text={t('home.button.buy')}/></Link>
+                        <Link to='/'><Btn text={t('home.button.sell')} /></Link>
+                        <Link to='/'><Btn text={t('home.button.changeclothes')}/></Link>
+                    </section>
                 </section>
             </main>
         </>

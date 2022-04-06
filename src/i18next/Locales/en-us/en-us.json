@@ -9,6 +9,12 @@
             "headline": {
                 "txt": "Here your clothes tell stories!",
                 "subtxt": "Sell, buy or trade your clothes with our help"
+            },
+            "button": {
+                "buy": "Buy",
+                "sell": "Sell",
+                "changeclothes": "Change"
+
             }
         },
         "login": {

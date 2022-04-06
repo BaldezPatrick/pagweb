@@ -1,9 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body {
-    background: linear-gradient(to top, #F5BE8E, #DE9776) no-repeat fixed;
+    background: url('../../Assets/roupa.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+.containerHome {
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerHomeHeadline {
+    background-color: #e48471d5;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    max-width: 900px;
+    padding: 30px;
+    text-align: center;   
+}
+
+.buttonContainerHome {
+    box-sizing: border-box;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    margin: 15px;
 }
