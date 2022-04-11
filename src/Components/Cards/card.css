@@ -1,0 +1,32 @@
+.containerCard {
+    align-items: center;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.card {
+    background-color: antiquewhite;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.btn {
+    background-color:azure;
+}
+
+@media (max-width: 950px) {
+    .containerCard {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .containerCard {
+        grid-template-columns: auto;
+    }
+}

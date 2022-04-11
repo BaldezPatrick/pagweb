@@ -1,6 +1,7 @@
 import './about.css';
 import Nav from '../../Components/Header/nav';
-import Objects from '../../Assets/objects.jpg'
+import Objects from '../../Assets/objects.jpg';
+
 const AboutUs = (props) => {
     return (
         <>
@@ -9,21 +10,21 @@ const AboutUs = (props) => {
 
                 <section className="containerAboutWho">
                     <figure className='containerImage'>
-                        <img src={Objects} alt="mochila pequena amarela" />
+                        <img src={Objects} alt="bolsas e outros acessórios" />
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit earum doloribus similique perferendis debitis deleniti eius architecto quo nemo? Culpa sapiente iure distinctio maxime quaerat illo, modi debitis sint? Recusandae omnis iste sit eveniet laborum quae dolorum, rem, voluptas enim aperiam ea voluptates dolores vitae quod officiis doloremque ex?</p>
                 </section>
 
                 <section className="containerAboutWho">
                     <figure className='containerImage'>
-                        <img src={Objects} alt="mochila pequena amarela" />
+                        <img src={Objects} alt="bolsas e outros acessórios" />
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit earum doloribus similique perferendis debitis deleniti eius architecto quo nemo? Culpa sapiente iure distinctio maxime quaerat illo, modi debitis sint? Recusandae omnis iste sit eveniet laborum quae dolorum, rem, voluptas enim aperiam ea voluptates dolores vitae quod officiis doloremque ex?</p>
                 </section>
 
                 <section className="containerAboutWho">
                     <figure className='containerImage'>
-                        <img src={Objects} alt="mochila pequena amarela" />
+                        <img src={Objects} alt="bolsas e outros acessórios" />
                     </figure>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt reprehenderit earum doloribus similique perferendis debitis deleniti eius architecto quo nemo? Culpa sapiente iure distinctio maxime quaerat illo, modi debitis sint? Recusandae omnis iste sit eveniet laborum quae dolorum, rem, voluptas enim aperiam ea voluptates dolores vitae quod officiis doloremque ex?</p>
                 </section>

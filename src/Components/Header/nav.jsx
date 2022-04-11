@@ -10,6 +10,7 @@ const Nav = () => {
             <nav class="navbar fixed-top navbar-light">
                 <Button />
                 <div class="container-fluid">
+                    <Link class="navbar-brand" to='/'>Home</Link>
                     <Link class="navbar-brand" to='/Aboutus'>{t('home.menu.um')}</Link>
                     <Link class="navbar-brand" to='/Product'>{t('home.menu.dois')}</Link>
                     <Link class="navbar-brand" to='/Contact'>{t('home.menu.tres')}</Link>
