@@ -17,6 +17,9 @@
 
             }
         },
+        "about": {
+            "news": "News"
+        },
         "login": {
             "password": "Password",
             "resetpassword": "Forgot your password?",
@@ -26,6 +29,11 @@
         "button": {
             "langpt": "Portuguese",
             "langen": "English"
+        },
+        "product": {
+            "h1": "Find the best clothes here",
+            "p1": "We have the largest variety of second-hand clothes in the country",
+            "p2": "Buy, sell or swap your second-hand clothes"
         },
         "welcome": {
             "welcomeText": "Welcome to your account!",

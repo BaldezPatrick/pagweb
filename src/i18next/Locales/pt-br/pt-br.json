@@ -17,6 +17,9 @@
 
             }
         },
+        "about": {
+            "news": "Notícias"
+        },
         "login": {
             "password": "Senha",
             "resetpassword": "Esqueceu sua senha?",
@@ -26,6 +29,11 @@
         "button": {
             "langpt": "Português",
             "langen": "Inglês"
+        },
+        "product": {
+            "h1": "Encontre as melhores roupas aqui",
+            "p1": "Temos a maior variedade de roupas usadas do país",
+            "p2": "Compre, venda ou troque suas roupas usadas"
         },
         "welcome": {
             "welcomeText": "Bem-vindo a tua conta!",

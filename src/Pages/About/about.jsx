@@ -1,8 +1,12 @@
 import './about.css';
 import Nav from '../../Components/Header/nav';
 import Objects from '../../Assets/objects.jpg';
+import { useTranslation } from 'react-i18next';
 
 const AboutUs = (props) => {
+    
+    const { t } = useTranslation();
+
     return (
         <>
             <Nav />
@@ -30,7 +34,7 @@ const AboutUs = (props) => {
                 </section>
 
                 <section className="gridNews">
-                    <div className='item1'>Notícias</div>
+                    <div className='item1'>{t('about.news')}</div>
                     <article className="gridNewsArticle">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim dolor qui hic culpa repellendus labore commodi minus sint rerum, corporis sit! Dicta at, quibusdam blanditiis suscipit dignissimos aliquam mollitia soluta architecto quaerat odit, libero perferendis nihil commodi voluptates et non explicabo magni iusto consequatur illo deleniti voluptatibus sequi ipsam?
                     </article>
