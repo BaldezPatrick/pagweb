@@ -38,6 +38,14 @@
         "welcome": {
             "welcomeText": "Bem-vindo a tua conta!",
             "welcomeSubtext": "Aqui será seu local de contar os filmes que assistiu!"
+        },
+        "contact": {
+            "h1": "Alguma dúvida? Fale conosco!",
+            "inputEmail": "Insira seu email aqui",
+            "inputTextarea": "Informe-nos sua duvida",
+            "button": "Enviar",
+            "spanEmail": "Ops... Você esqueceu de inserir seu email",
+            "spanTextA": "Você precisa enviar uma dúvida"
         }
     }
 }

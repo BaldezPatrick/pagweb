@@ -38,6 +38,14 @@
         "welcome": {
             "welcomeText": "Welcome to your account!",
             "welcomeSubtext": "Here will be your place to tell the movies you've watched!"
+        },
+        "contact": {
+            "h1": "Any questions? Contact us!",
+            "inputEmail": "Enter your email here",
+            "inputTextarea": "Tell us your doubt",
+            "button": "Send",
+            "spanEmail": "Ops... You forgot to enter your email",
+            "spanTextA": "You need send a doubt"
         }
     }
 }

@@ -3,7 +3,7 @@ import './buttonchoice.css'
 const Btn = (props) => {
     return (
         <>
-            <input type='button' className="btn_edit" value={props.text} />
+            <input type={props.type} className="btn_edit" value={props.text} />
         </>
     );
 }

@@ -14,9 +14,9 @@ const Home = (props) => {
                     <h1>{t('home.headline.txt')}</h1>
                     <p>{t('home.headline.subtxt')}</p>
                     <section className="buttonContainerHome">
-                        <Link to='/'><Btn text={t('home.button.buy')}/></Link>
-                        <Link to='/'><Btn text={t('home.button.sell')} /></Link>
-                        <Link to='/'><Btn text={t('home.button.changeclothes')}/></Link>
+                        <Link to='/'><Btn type={'button'} text={t('home.button.buy')}/></Link>
+                        <Link to='/'><Btn type={'button'} text={t('home.button.sell')} /></Link>
+                        <Link to='/'><Btn type={'button'} text={t('home.button.changeclothes')}/></Link>
                     </section>
                 </section>
             </main>
