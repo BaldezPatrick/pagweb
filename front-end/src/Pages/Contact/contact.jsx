@@ -2,9 +2,25 @@ import Nav from '../../Components/Header/nav';
 import Btn from '../../Components/Button/buttonchoice';
 import './contat.css';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import api from '../../Server/index';
 
 const Contact= () => {
+
+    const email = useRef()
+    const textA = useRef()
+
+    function sendContact(event) {
+        event.preventDefault()
+        let ev = Object.values(form).some(obj => obj === "");
+        setEmptyValue(ev)
+        if (ev === false) {
+            api.post("/contato", {
+                email: email.current.value,
+                motivo: textA.current.value,
+            }).then(() => document.location.href = "/Welcome")
+        }
+    }
 
     const { t } = useTranslation();
 
@@ -21,27 +37,19 @@ const Contact= () => {
         setForm({ ...newProp })
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        let ev = Object.values(form).some(obj => obj === "");
-        setEmptyValue(ev)
-        if (ev === false) {
-            console.log('OK')
-        }
-    }
-
     return(
         <>
             <Nav />
             <main className="containerContact">
                 <section className="contactUs">
                     <h1>{t('contact.h1')}</h1>
-                    <form action="" className="contactUsForm" onSubmit={(e) => handleSubmit(e)}>
-                        <input type="email" name="email" id="email" placeholder={t('contact.inputEmail')} onBlur={(e) => handleChange(e)}/>
+                    <form action="" className="contactUsForm" onSubmit={(e) => sendContact(e)}>
+                        <input type="email" name="email" id="email" placeholder={t('contact.inputEmail')} onBlur={(e) => handleChange(e)} ref={email}/>
                         {empytValue && form['email'] === "" ? <span className="msg">{t('contact.spanEmail')}</span> : "" }
-                        <textarea name="textA" id="textA" cols="40" rows="8" placeholder={t('contact.inputTextarea')} onBlur={(e) => handleChange(e)}></textarea>
+
+                        <textarea name="textA" id="textA" cols="40" rows="8" placeholder={t('contact.inputTextarea')} onBlur={(e) => handleChange(e)} ref={textA}></textarea>
                         {empytValue && form['textA'] === "" ? <span className="msg">{t('contact.spanTextA')}</span> : "" }
+
                         <Btn type={'submit'} text={t('contact.button')} />
                     </form>
                 </section>
